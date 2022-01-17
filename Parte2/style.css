@@ -1,0 +1,155 @@
+header,.content{
+  display: none;
+  }
+  
+
+  /*
+
+(1) Modifica el codigo flex para que la dirección de los elementos sean en columna
+  */
+
+  .nav {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      list-style: none;
+      justify-content:space-around;
+  
+    }
+
+  
+  .nav > li {
+      margin: 10px;
+      flex-basis: auto;
+  }
+
+  li {
+    display: flex;
+    border: solid;
+    text-align: center;
+    border-color: gray;
+    border-width: 1px;
+    flex-basis: 19%;
+    justify-content: space-evenly;
+}
+
+
+  /*Device = Tablets, Ipads (portrait) Screen = B/w 600px to 990px*/
+    @media (min-width:600px) and (max-width: 990px)  {
+
+      
+  
+/* (2) Agrega el código necesartio de flex para que los elementos de navegación aparezcan en filas como en la imagen.*/
+      .nav {
+
+        height: auto;
+
+      }
+
+
+
+      .content{
+        display: flex;
+        justify-content: space-evenly;
+        border: solid;
+        border-width: 1px;
+    }
+    
+      .aside {
+        border: solid;
+        width: 30%;
+        border-width: 1px;
+        
+      }
+    
+      .slidebox{
+
+        display: flex;
+        justify-content: space-evenly;
+        border: solid;
+        border-width: 1px;
+       
+      }
+    
+      .article{
+          width: 70%;
+      }
+  
+    .poem{
+        display: flex;
+        border: solid;
+        border-width: 1px;
+        justify-content: flex-start;
+    }
+  }
+  
+  
+  @media (min-width:991px) {
+
+    
+    /* (3) Agrega codigo flex para que aparezcan los encabezados. (Solo necesitas activar flex) */      
+    header {
+
+   }
+
+   /*
+(3.1) Utiliza el mismo .nav del media query anterior
+*/
+      .nav {
+
+        height: auto;
+
+
+      }
+
+    h2 {
+        border: solid;
+        border-width: 1px;
+        flex-basis: 33%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+      .content{
+        display: flex;
+        justify-content: space-evenly;
+        border: solid;
+        border-width: 1px;
+    }
+    
+      .aside {
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        width: 30%;
+        border-width: 1px;
+        
+      }
+    
+      .slidebox{
+        display: flex;
+        justify-content: space-evenly;
+        border: solid;
+        border-width: 1px;
+       
+      }
+
+      /* (4) Agrega codigo flex papara modificar el posicionamiento de los articulos en columnas. */   
+      .article{
+        
+          width: 70%;
+      }
+    
+    
+    .poem{
+        display: flex;
+        border: solid;
+        border-width: 1px;
+        justify-content: flex-start;
+    }
+  }
+  
+  
+    
+  
