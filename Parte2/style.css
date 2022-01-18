@@ -10,7 +10,7 @@ header,.content{
 
   .nav {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       height: 100vh;
       list-style: none;
       justify-content:space-around;
@@ -37,16 +37,13 @@ header,.content{
   /*Device = Tablets, Ipads (portrait) Screen = B/w 600px to 990px*/
     @media (min-width:600px) and (max-width: 990px)  {
 
-      
   
 /* (2) Agrega el código necesartio de flex para que los elementos de navegación aparezcan en filas como en la imagen.*/
       .nav {
-
+        flex-direction: row;
         height: auto;
 
       }
-
-
 
       .content{
         display: flex;
@@ -89,6 +86,7 @@ header,.content{
     
     /* (3) Agrega codigo flex para que aparezcan los encabezados. (Solo necesitas activar flex) */      
     header {
+      display: flex;
 
    }
 
@@ -96,9 +94,8 @@ header,.content{
 (3.1) Utiliza el mismo .nav del media query anterior
 */
       .nav {
-
         height: auto;
-
+        flex-direction: row;
 
       }
 
